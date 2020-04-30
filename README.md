@@ -1,5 +1,3 @@
-# Signs-JS
-Library of Zodiacs in Javascript.
 
 # Funções
 
@@ -11,7 +9,7 @@ Usando a função getSign(day, month) você consegue definir o Signo do Zodíaco
 const user_sign = getSign(23, 1);
 ```
 ```Return: Aquário```
-<br>
+
 **Exemplo c/ mês String:**
 ```javascript
 const user_sign = getSign(23, "January"); // ou "Jan"
@@ -31,13 +29,13 @@ Usando a função returnMonth(stringMonth) você consegue retornar o mês em for
 const user_month = returnMonth('Abril');
 ```
 ```Return: April```
-<br>
+
 **Exemplo (em Espanhol):**
 ```javascript
 const user_month = returnMonth('Enero');
 ```
 ```Return: January```
-<br>
+
 ------------
 
 ## Exemplo Prático:
