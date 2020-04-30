@@ -1,6 +1,7 @@
+# Signs-JS
+Library of Zodiacs in Javascript.
 
-# Funções
-
+## Funções
 ### getSign(day, month)
 Usando a função getSign(day, month) você consegue definir o Signo do Zodíaco de uma determinada data, atualmente o parâmetro **month** aceita entradas númericas e String em **en-US** (de acordo com o nome de cada mês do calendário, não sendo Case-Sensitive).
 
@@ -19,18 +20,19 @@ const user_sign = getSign(23, "January"); // ou "Jan"
 > Obs: A função c/ String não é case-senstive. (Isto é: pode se usar: jan, january ou até JaNuarY)
 
 ------------
-
 ### returnMonth(stringMonth)
 Usando a função returnMonth(stringMonth) você consegue retornar o mês em formato aceito pela função principal, atualmente é aceito **Pt-BR** e **ES**.
 
 
 **Exemplo (em Português):**
+
 ```javascript
 const user_month = returnMonth('Abril');
 ```
 ```Return: April```
 
 **Exemplo (em Espanhol):**
+
 ```javascript
 const user_month = returnMonth('Enero');
 ```
@@ -50,4 +52,4 @@ birth_month = returnMonth(birth_month);
 var user_sign = getSign(birth_day, birth_month);
 alert("Your sign is: " + user_sign);
 ```
-##### Contribua com o Signs-JS.Contribua com o Signs-JS. :tw-1f606: :tw-1f525:
+##### Contribua com o Signs-JS.
