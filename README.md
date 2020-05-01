@@ -17,7 +17,7 @@ const user_sign = getSign(23, "January"); // ou "Jan"
 ```
 ```Return: Aquário```
 
-> Obs: A função c/ String não é case-senstive. (Isto é: pode se usar: jan, january ou até JaNuarY)
+> Obs: A função c/ String não é case-senstive. (pode se usar: jan, january ou até JaNuarY)
 
 ------------
 ### returnMonth(stringMonth)
@@ -41,7 +41,7 @@ const user_month = returnMonth('Enero');
 ------------
 
 ## Exemplo Prático:
-Abaixo iremos desenvolver um simples algortmo para descobrir o signo do nosso usuário com prompt() e alert():
+Abaixo iremos desenvolver um simples algoritmo para descobrir o signo do nosso usuário com prompt() e alert():
 
 ```javascript
 var birth_day = prompt("What is the day of your birth?");
