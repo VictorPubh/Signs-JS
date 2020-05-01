@@ -8,7 +8,7 @@ function getSign(setDay, setMonth, language) {
     It adopts the value of the matrix with the input value as index (-1) :
     It transforms the text into lowercase letters and returns 3 letters (0, 3);
   */
-	setMonth = !isNaN(setMonth) ? String(setMonth).replace(setMonth, months[setMonth - 1]) : setMonth.toLowerCase().substr(0, 3);
+	setMonth = !isNaN(setMonth) ? String(setMonth).replace(setMonth, months[setMonth - 1]) : setMonth.toLowerCase().substr(0, 3)
 
   const month = {
 	  jan: function(setDay) {
@@ -70,7 +70,7 @@ function getSign(setDay, setMonth, language) {
 }
 
 function returnMonth(setMonth){
-  setMonth = setMonth.toLowerCase();
+  setMonth = setMonth.toLowerCase()
 
 	const months = [
     "January --Janeiro--Enero",
@@ -85,13 +85,13 @@ function returnMonth(setMonth){
     "October --Outubro--Octubre",
     "November --Novembro--Noviembre",
     "December --Dezembro--Diciembre"
-  ].map(v => v.toLowerCase());
+  ].map(v => v.toLowerCase())
   
 	for(var numberMonth = 0; numberMonth < months.length; numberMonth++){
-		months[numberMonth] = months[numberMonth].replace(' ', '').split("--");
+		months[numberMonth] = months[numberMonth].replace(' ', '').split("--")
 		for(var c = 0; c < months[numberMonth].length; c++){
 			if(months[numberMonth][c] == setMonth){
-        return months[numberMonth][0];
+        return months[numberMonth][0]
 			}
 		}
 	}
