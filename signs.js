@@ -10,6 +10,7 @@ function getSign(setDay, setMonth, language) {
   */
 	setMonth = !isNaN(setMonth) ? String(setMonth).replace(setMonth, months[setMonth - 1]) : setMonth.toLowerCase().substr(0, 3)
 
+  // Change the names of the signs, to other languages, if you need to
   const month = {
 	  jan: function(setDay) {
       var valueReturn = setDay > 20 ? "Aquário" : "Capricórnio"
@@ -87,9 +88,9 @@ function returnMonth(setMonth){
     "December --Dezembro--Diciembre"
   ].map(v => v.toLowerCase())
   
-	for(var numberMonth = 0; numberMonth < months.length; numberMonth++){
-		months[numberMonth] = months[numberMonth].replace(' ', '').split("--")
-		for(var c = 0; c < months[numberMonth].length; c++){
+	for(let numberMonth = 0; numberMonth < months.length; numberMonth++){
+		months[numberMonth] = months[numberMonth].split("--")
+		for(let c = 0; c < months[numberMonth].length; c++){
 			if(months[numberMonth][c] == setMonth){
         return months[numberMonth][0]
 			}

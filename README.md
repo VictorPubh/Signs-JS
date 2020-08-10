@@ -52,4 +52,7 @@ birth_month = returnMonth(birth_month)
 var user_sign = getSign(birth_day, birth_month)
 alert(`Your sign is: ${user_sign}`)
 ```
-##### Contribua com o Signs-JS.
+##### Ou leia: [Como descobrir signos com Javascript](https://cutt.ly/9d1deJu) (usando Signs-JS).
+-
+
+##### Se você é um desenvolvedor experiente, contribua com o Signs-JS.
